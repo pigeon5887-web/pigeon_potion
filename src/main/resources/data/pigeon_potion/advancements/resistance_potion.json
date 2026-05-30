@@ -1,0 +1,60 @@
+{
+  "parent": "pigeon_potion:pigeon_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"pigeon_potion:resistance_potion\"}"
+    },
+    "title": {
+      "translate": "advancements.pigeon_potion.resistance_potion.title"
+    },
+    "description": {
+      "translate": "advancements.pigeon_potion.resistance_potion.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "rewards": {
+      "experience": 100
+    }
+  },
+  "criteria": {
+    "resistance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:potion"],
+            "nbt": "{Potion:\"pigeon_potion:resistance_potion\"}"
+          }
+        ]
+      }
+    },
+    "long_resistance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:potion"],
+            "nbt": "{Potion:\"pigeon_potion:long_resistance_potion\"}"
+          }
+        ]
+      }
+    },
+    "strong_resistance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:potion"],
+            "nbt": "{Potion:\"pigeon_potion:strong_resistance_potion\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["resistance", "long_resistance", "strong_resistance"]
+  ]
+}

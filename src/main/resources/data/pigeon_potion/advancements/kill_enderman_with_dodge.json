@@ -1,0 +1,40 @@
+{
+  "parent": "pigeon_potion:pigeon_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"pigeon_potion:dodge_potion\"}"
+    },
+    "title": {
+      "translate": "advancements.pigeon_potion.kill_enderman_with_dodge.title"
+    },
+    "description": {
+      "translate": "advancements.pigeon_potion.kill_enderman_with_dodge.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "rewards": {
+      "experience": 100
+    }
+  },
+  "criteria": {
+    "killed_enderman": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:enderman"
+        },
+        "player": {
+          "effects": {
+            "pigeon_potion:dodge": {}
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["killed_enderman"]
+  ]
+}

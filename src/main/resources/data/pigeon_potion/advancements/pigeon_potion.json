@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"pigeon_potion:divine_potion\"}"
+    },
+    "title": {
+      "translate": "advancements.pigeon_potion.title"
+    },
+    "description": {
+      "translate": "advancements.pigeon_potion.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_brewing_stand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:brewing_stand"]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "pigeon_potion:pigeon_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"pigeon_potion:long_divine_potion\"}"
+    },
+    "title": {
+      "translate": "advancements.pigeon_potion.drink_long_divine.title"
+    },
+    "description": {
+      "translate": "advancements.pigeon_potion.drink_long_divine.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "rewards": {
+      "experience": 150
+    }
+  },
+  "criteria": {
+    "drink_long_divine": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:potion"],
+          "nbt": "{Potion:\"pigeon_potion:long_divine_potion\"}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["drink_long_divine"]
+  ]
+}
