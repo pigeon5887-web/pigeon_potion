@@ -1,7 +1,5 @@
 # Pigeon Potion
 
-![Logo](logo.png)
-
 A potion expansion mod for Minecraft Forge 1.20.1.
 
 ## Features
