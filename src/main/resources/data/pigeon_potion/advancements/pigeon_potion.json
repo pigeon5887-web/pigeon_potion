@@ -1,8 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:potion",
-      "nbt": "{Potion:\"pigeon_potion:divine_potion\"}"
+      "item": "minecraft:brewing_stand"
     },
     "title": {
       "translate": "advancements.pigeon_potion.title"

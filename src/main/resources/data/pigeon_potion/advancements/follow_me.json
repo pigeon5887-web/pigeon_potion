@@ -1,0 +1,29 @@
+{
+  "parent": "pigeon_potion:pigeon_potion",
+  "display": {
+    "icon": {
+      "item": "minecraft:poppy"
+    },
+    "title": {
+      "translate": "advancements.pigeon_potion.follow_me.title"
+    },
+    "description": {
+      "translate": "advancements.pigeon_potion.follow_me.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "criteria": {
+    "followed": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    ["followed"]
+  ]
+}

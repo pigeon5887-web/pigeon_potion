@@ -2,8 +2,7 @@
   "parent": "pigeon_potion:pigeon_potion",
   "display": {
     "icon": {
-      "item": "minecraft:potion",
-      "nbt": "{Potion:\"pigeon_potion:long_divine_potion\"}"
+      "item": "minecraft:totem_of_undying"
     },
     "title": {
       "translate": "advancements.pigeon_potion.drink_long_divine.title"

@@ -18,4 +18,6 @@ public class ModEffects {
     public static final RegistryObject<MobEffect> BERSERK = EFFECTS.register("berserk", BerserkEffect::new);
     public static final RegistryObject<MobEffect> DIVINE = EFFECTS.register("divine", DivineEffect::new);
     public static final RegistryObject<MobEffect> DODGE = EFFECTS.register("dodge", DodgeEffect::new);
+    public static final RegistryObject<MobEffect> FRIENDLY = EFFECTS.register("friendly", FriendlyEffect::new);
+    public static final RegistryObject<MobEffect> REPEL = EFFECTS.register("repel", RepelEffect::new);
 }

@@ -143,4 +143,12 @@ public class ModPotions {
             () -> new Potion(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 3)));
     public static final RegistryObject<Potion> STRONG_RESISTANCE_POTION_PLUS_1 = POTIONS.register("strong_resistance_potion_plus_1",
             () -> new Potion(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 520, 3)));
+
+    // ========== 亲近药水 ==========
+    public static final RegistryObject<Potion> FRIENDLY_POTION = POTIONS.register("friendly_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.FRIENDLY.get(), 1200, 0)));
+
+    // ========== 驱逐药水 ==========
+    public static final RegistryObject<Potion> REPEL_POTION = POTIONS.register("repel_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.REPEL.get(), 1200, 0)));
 }

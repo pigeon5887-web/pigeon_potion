@@ -102,61 +102,11 @@ public class PigeonPotionJeiPlugin implements IModPlugin {
         addBrewingRecipe(registration, Potions.LONG_TURTLE_MASTER, Items.AMETHYST_SHARD, ModPotions.LONG_RESISTANCE_POTION.get());
         addBrewingRecipe(registration, Potions.STRONG_TURTLE_MASTER, Items.AMETHYST_SHARD, ModPotions.STRONG_RESISTANCE_POTION.get());
 
-        // 火药 + 龙息步骤
-        addSplashAndLingeringRecipe(registration, ModPotions.HASTE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_HASTE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_HASTE_POTION.get());
+        //亲近药水
+        addBrewingRecipe(registration, Potions.AWKWARD, Items.POPPY, ModPotions.FRIENDLY_POTION.get());
 
-        addSplashAndLingeringRecipe(registration, ModPotions.FATIGUE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_FATIGUE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_FATIGUE_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.THORNS_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_THORNS_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_THORNS_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.ARMOR_BOOST_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_ARMOR_BOOST_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_ARMOR_BOOST_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.ARMOR_BREAK_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_ARMOR_BREAK_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_ARMOR_BREAK_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.EXCELLENT_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_EXCELLENT_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_EXCELLENT_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.WARRIOR_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_WARRIOR_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_WARRIOR_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.BERSERK_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_BERSERK_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.DIVINE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_DIVINE_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.WITHER_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_WITHER_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_WITHER_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.LUCK_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_LUCK_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.BAD_LUCK_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_BAD_LUCK_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.NAUSEA_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_NAUSEA_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_NAUSEA_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.DODGE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_DODGE_POTION.get());
-
-        addSplashAndLingeringRecipe(registration, ModPotions.RESISTANCE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.LONG_RESISTANCE_POTION.get());
-        addSplashAndLingeringRecipe(registration, ModPotions.STRONG_RESISTANCE_POTION.get());
+        //驱逐药水
+        addBrewingRecipe(registration, ModPotions.FRIENDLY_POTION.get(), Items.FERMENTED_SPIDER_EYE, ModPotions.REPEL_POTION.get());
     }
 
     private void addBrewingRecipe(
@@ -168,14 +118,6 @@ public class PigeonPotionJeiPlugin implements IModPlugin {
         addBrewingRecipe(registration, Items.POTION, inputPotion, ingredient, Items.POTION, outputPotion);
         addBrewingRecipe(registration, Items.SPLASH_POTION, inputPotion, ingredient, Items.SPLASH_POTION, outputPotion);
         addBrewingRecipe(registration, Items.LINGERING_POTION, inputPotion, ingredient, Items.LINGERING_POTION, outputPotion);
-    }
-
-    private void addSplashAndLingeringRecipe(
-            IRecipeRegistration registration,
-            Potion potion
-    ) {
-        addBrewingRecipe(registration, Items.POTION, potion, Items.GUNPOWDER, Items.SPLASH_POTION, potion);
-        addBrewingRecipe(registration, Items.SPLASH_POTION, potion, Items.DRAGON_BREATH, Items.LINGERING_POTION, potion);
     }
 
     private void addBrewingRecipe(

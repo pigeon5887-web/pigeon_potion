@@ -2,8 +2,7 @@
   "parent": "pigeon_potion:pigeon_potion",
   "display": {
     "icon": {
-      "item": "minecraft:potion",
-      "nbt": "{Potion:\"pigeon_potion:dodge_potion\"}"
+      "item": "minecraft:ender_pearl"
     },
     "title": {
       "translate": "advancements.pigeon_potion.kill_enderman_with_dodge.title"

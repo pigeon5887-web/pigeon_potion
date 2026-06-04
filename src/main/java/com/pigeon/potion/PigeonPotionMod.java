@@ -45,6 +45,8 @@ public class PigeonPotionMod {
             NauseaRecipes.register();
             ResistanceRecipes.register();
             DodgeRecipes.register();
+            FriendlyRecipes.register();
+            RepelRecipes.register();
         });
     }
 }
